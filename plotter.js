@@ -153,16 +153,3 @@ function draw(){
 
 draw();
 
-var sock = new WebSocket("ws://localhost:5001");
-
-var log = document.getElementById('log');
-
-sock.onmessage = function(event){
-    console.log(event.data);
-    log.innerHTML += event.data + "<br>";
-}
-
-document.querySelector('button').onclick = function(){
-    var text = document.getElementById('text').value;
-    sock.send(text);
-};

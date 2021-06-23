@@ -8,5 +8,16 @@
         <canvas id="canvas" width="1000" height="600"></canvas>
 
         <script src="plotter.js"></script>
+        <script src="ws_control.js"></script>
+
+        <div id="controls">
+            <div id="server">
+            <input type="text" name="server_url" id="server_url" value="ws://localhost:9002" /><br />
+            <button id="toggle_connect" onclick="toggle_connect();">Connect</button>
+            </div>
+        </div>
+
+
+
     </body>
 </html>
